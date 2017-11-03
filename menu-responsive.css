@@ -1,0 +1,87 @@
+/* ::::: http://help50.com/tp/shop-1/template1-css/styles.css ::::: */
+
+* { margin: 0px; padding: 0px; }
+body { font: 12px/1.55 Verdana,helvetica,sans-serif; color: rgb(129, 129, 129); text-align: center; }
+#nav > li > ul > li.parent > a span, #nav > li > a > span { font-family: Georgia; }
+#nav > li > ul > li.parent > a { color: rgb(53, 53, 53); }
+img { border: 0px none; vertical-align: top; max-width: 100%; }
+a { color: rgb(53, 53, 53); text-decoration: none; }
+a:hover { text-decoration: underline; }
+:focus { outline: 0px none; }
+h3 { font-size: 1.7em; color: rgb(17, 17, 17); font-family: Georgia; line-height: 1.25; margin-bottom: 0.45em; font-weight: normal; }
+p { margin: 0px 0px 1em; }
+/**::-moz-selection { background-color: rgb(255, 74, 74); color: rgb(255, 255, 255); }*/
+ul { list-style: outside none none; }
+
+.page { width: 940px; padding: 0px 20px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; margin: 0px auto; text-align: left; }
+
+#nav { border-bottom: 1px solid rgb(172, 172, 172); height: 30px; }
+#nav > li { float: left; margin: 0px 5px 0px 0px; padding: 8px 10px; }
+#nav > li:hover, #nav > li.active { background: white none repeat scroll 0% 0%; border-width: 1px; border-style: solid; border-color: rgb(172, 172, 172) rgb(172, 172, 172) white; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; height: 15px; padding: 7px 9px; }
+#nav > li > a > span { font-size: 16px; text-transform: uppercase; }
+#nav .homelink { margin-left: 20px; }
+
+
+.et-mobile-menu { text-align: left; display: none; margin-bottom: 40px; }
+.et-menu-title { cursor: pointer; display: none; padding: 0px 15px 0px 53px; line-height: 50px; background: rgba(0, 0, 0, 0) url('menu-icon.png') no-repeat scroll 15px center; color: white; font-size: 20px; font-family: Georgia; text-transform: uppercase; margin: 5px 0px 0px; text-align: left; }
+.et-mobile-menu li { display: block; position: relative; }
+.et-mobile-menu li .open-child { float: right; display: block; text-indent: -99999px; width: 45px; height: 46px; background-color: rgb(245, 245, 245); background-image: url('plus.png'); background-position: center center; background-repeat: no-repeat; cursor: pointer; }
+.et-mobile-menu li.over > .open-child { background-image: url('minus.png'); }
+.et-mobile-menu li .open-child:hover { background-color: rgb(245, 245, 245); transition: background-color 0.3s ease 0s; }
+.et-mobile-menu li > a { display: block; line-height: 45px; padding: 0px 10px; font-size: 16px; text-transform: uppercase; font-family: Georgia; background: white none repeat scroll 0% 0%; border-top: 1px solid rgb(239, 239, 239); }
+.et-mobile-menu li > a:hover { background-color: rgb(245, 245, 245); text-decoration: none; color: rgb(34, 34, 34); transition: background-color 0.3s ease 0s; }
+.et-mobile-menu > li > ul { border-top: 0px none !important; }
+.et-mobile-menu > li ul { display: none; }
+.et-mobile-menu > li > ul li { display: block; position: relative; }
+.et-mobile-menu > li > ul > li a { padding-left: 20px; display: block; }
+.et-mobile-menu > li > ul > li li a { padding-left: 40px; }
+
+@media only screen and (max-width: 959px) {
+	#nav { display: none; }
+
+	.et-menu-title { display: block; }
+
+	.nav-container { border-bottom: medium none !important; }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.page { width: 754px; margin: 0px auto; box-sizing: border-box; text-align: left; }
+
+}
+@media only screen and (max-width: 767px) {
+	.page { width: 280px; }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.page { width: 440px; }
+}
+
+
+#nav { position: relative; }
+#nav li { text-align: left; }
+#nav a, #nav a:hover { display: block; line-height: 1.3em; text-decoration: none; }
+#nav span { display: block; cursor: pointer; white-space: nowrap; }
+#nav li ul span { white-space: normal; }
+#nav a { float: left; }
+#nav ul.chield > li { display: block; float: left; padding: 0px 10px 0px 0px; }
+#nav .chield { width: 928px; border-width: 4px 1px 1px; border-style: solid; border-color: rgb(172, 172, 172); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+
+#nav ul a, #nav ul a:hover { float: none; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; }
+#nav ul a:hover { text-decoration: underline; }
+#nav > li > ul > li > a {  }
+#nav > li > ul > li.parent > a span { font-size: 16px; text-transform: uppercase; line-height: 20px; }
+#nav ul li a { font-weight: normal; }
+#nav ul.level0 :nth-child(6n+1) { clear: both; }
+#nav ul { top: 32px; left: -10000px; padding: 3px 0px 15px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-size: 11px; }
+#nav > li > ul > li { width: 133px; margin: 0px 10px 0px 0px; }
+
+#nav ul.level0 { position: absolute; z-index: 1500; padding: 20px 15px 15px; }
+#nav > li > ul > li ul { margin-left: 3px; }
+
+
+#nav ul ul { top: 5px; padding: 10px 0px 5px; }
+#nav > li:hover > a > span, #nav > li.active > a > span, a:hover, #nav > li > ul > li.parent > a:hover, #nav > li > ul > li ul > li a:hover { color: rgb(255, 74, 74); }
+.et-menu-title { background-color: rgb(255, 74, 74); }
+#nav > li > ul > li ul > li a { color: rgb(129, 129, 129); }
+#nav > li > ul > li ul > li { background-color: rgb(129, 129, 129); }
+
+
+
